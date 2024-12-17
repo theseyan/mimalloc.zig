@@ -10,3 +10,10 @@ const allocator = mimalloc.allocator();
 
 // Use `allocator` here...
 ```
+
+## Tests
+
+Run the tests:
+```
+zig build test
+```
