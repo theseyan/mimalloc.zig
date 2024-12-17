@@ -1,0 +1,22 @@
+.{
+    .name = "mimalloc.zig",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.13.0",
+
+    .dependencies = .{
+        .macos_sdk = .{
+            .url = "https://github.com/mitchellh/zig-build-macos-sdk/archive/refs/heads/main.tar.gz",
+            .hash = "12209cc9ee372456eda52b71cf9ae77dcc707fa42c9f9d68996b5bf7495b53229c2e"
+        },
+        .mimalloc_c = . {
+            .url = "https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.7.tar.gz",
+            .hash = "12209bba1fc4faac01d1ee247a38bdb9f340ce60e457d194fa9da4f7c22b96986521"
+        }
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
